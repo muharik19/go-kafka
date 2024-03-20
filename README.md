@@ -160,7 +160,7 @@ $ kafka-topics --bootstrap-server localhost:9092 --describe --topic YOURTOPIC
 #### Send Message Producer
 
 ```sh
-$ kafka-console-producer --broker-list localhost:9092 --topic YOURTOPIC
+$ kafka-console-producer --bootstrap-server localhost:9092 --topic YOURTOPIC
 ```
 
 #### Send Message Producer with Key

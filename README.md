@@ -54,18 +54,18 @@ $ make --version
 
 #### Windows and macOS
 
-**Docker Compose is included in Docker Desktop for Windows and macOS.**
+- **Docker Compose is included in Docker Desktop for Windows and macOS.**
 
 #### Linux
 
-**For Ubuntu and Debian, run:**
+- **For Ubuntu and Debian, run:**
 
 ```sh
 $ sudo apt-get update
 $ sudo apt-get install docker-compose-plugin
 ```
 
-**For RPM-based distros, run:**
+- **For RPM-based distros, run:**
 
 ```sh
 $ sudo yum update

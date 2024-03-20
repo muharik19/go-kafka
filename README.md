@@ -148,7 +148,13 @@ $ kafka-topics --bootstrap-server localhost:9092 --delete --topic YOURTOPIC
 #### Alter Topic
 
 ```sh
-$ kafka-topics --bootstrap-server localhost:9092 --alter --topic TEST --partitions 3
+$ kafka-topics --bootstrap-server localhost:9092 --alter --topic YOURTOPIC --partitions 3
+```
+
+#### List Detail Topic
+
+```sh
+$ kafka-topics --bootstrap-server localhost:9092 --describe --topic YOURTOPIC
 ```
 
 #### Send Message Producer

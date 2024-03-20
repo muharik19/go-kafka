@@ -163,6 +163,13 @@ $ kafka-topics --bootstrap-server localhost:9092 --describe --topic YOURTOPIC
 $ kafka-console-producer --broker-list localhost:9092 --topic YOURTOPIC
 ```
 
+#### Send Message Producer with Key
+
+```sh
+# example: >1:test
+$ kafka-console-producer --bootstrap-server localhost:9092 --topic YOURTOPIC --property "parse.key=true" --property "key.separator=:"
+```
+
 #### Received Message Consumer
 
 ```sh
@@ -173,6 +180,12 @@ $ kafka-console-consumer --bootstrap-server localhost:9092 --topic YOURTOPIC --f
 
 ```sh
 $ kafka-console-consumer --bootstrap-server localhost:9092 --topic YOURTOPIC --group YOURGROUP --from-beginning
+```
+
+#### Received Message Consumer Group with Key
+
+```sh
+$ kafka-console-consumer --bootstrap-server localhost:9092 --topic YOURTOPIC --group YOURGROUP --from-beginning --property "print.key=true"
 ```
 
 #### List Consumer Group Offset
